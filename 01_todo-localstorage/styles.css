@@ -1,0 +1,112 @@
+/* =========================
+   Global Reset
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   Body Styling
+========================= */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #8bbadab3, #c1a3e0);
+  color: #ffffff;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* =========================
+   App Container
+========================= */
+.container {
+  background-color: #6b5d91;
+  width: 500px;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================
+   Heading
+========================= */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f5f5f5;
+}
+
+/* =========================
+   Input Section
+========================= */
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  background-color: #333333;
+  color: #ffffff;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #6200ea;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+/* =========================
+   Task List
+========================= */
+ul {
+  list-style: none;
+}
+
+li {
+  background-color: #333333;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Completed Task */
+li.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+/* Delete Button */
+li button {
+  background-color: #d32f2f;
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+li button:hover {
+  background-color: #b71c1c;
+}
